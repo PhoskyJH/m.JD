@@ -58,22 +58,57 @@ ul{
     position: absolute;
     top: 0;
     left: 0;
-    background-color:pink;
+    /* background-color:pink; */
     height: 44px;
     width: 40px;
 }
+.search-btn::before{
+    content: "";
+    display: block;
+    width: 20px;
+    height: 18px;
+    background: url(../images/s-btn.png) no-repeat;
+    background-size: 20px 18px;
+    margin: 14px 0 0 15px;
+}
+
 .search-login{
     position: absolute;
     right: 0;
     top: 0;
     width: 40px;
     height: 44px;
-    background-color: purple;
+    /* background-color: purple; */
+    color: #fff;
+    line-height: 44px;
 }
 .search{
+    position: relative;
     height: 30px;
     background-color: #fff;
     margin: 0 50px;
     border-radius: 15px;
     margin-top: 7px;
+}
+
+.jd-icon{
+    width: 20px;
+    height: 15px;
+    position: absolute;
+    top: 8px;
+    left: 13px;
+    background-color:pink;
+    background: url(../images/jd.png) no-repeat;
+    background-size: 20px 15px;
+}
+
+.jd-icon::after{
+    content: "";
+    display: block;
+    width: 1px;
+    height: 15px;
+    background-color: #ccc;
+    position: absolute;
+    right: -8px;
+    top: 0;
 }
