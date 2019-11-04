@@ -7,13 +7,20 @@ body {
     font-family: -apple-system,Helvetica , sans-serif;
     color: #666;
     line-height: 1.5;
-    background-color: #ccc;
+
+}
+
+a{
+    color: #666;
+    text-decoration: none;
 }
 
 .app {
     height: 45px;
 }
-
+img {
+    vertical-align: middle;
+}
 ul{
     margin: 0;
     padding: 0;
@@ -51,8 +58,12 @@ ul{
 /* 搜素 */
 .search-wrap {
     height: 44px;
-    position: relative;
+    position: fixed;
+    width: 100%;
+    min-width: 320px;
+    max-width: 640px; 
     overflow: hidden;  /*  父子元素margintop重叠，会将整个父元素带下来，解决方法加个overflow */
+    /* background-color: pink; */
 }
 .search-btn{
     position: absolute;
@@ -97,7 +108,7 @@ ul{
     position: absolute;
     top: 8px;
     left: 13px;
-    background-color:pink;
+    /* background-color:pink; */
     background: url(../images/jd.png) no-repeat;
     background-size: 20px 15px;
 }
@@ -111,4 +122,78 @@ ul{
     position: absolute;
     right: -8px;
     top: 0;
+}
+.sou {
+    position: absolute;
+    top: 8px;
+    left: 50px;
+    width: 18px;
+    height: 15px;
+    background-color: pink;
+    background: url(../images/jd-sprites.png) no-repeat -81px 0;
+    background-size: 200px auto;
+}
+
+.slider img{
+    width: 100%;
+}
+
+.brand {
+    border-radius: 10px 10px 0;
+    overflow: hidden;
+}
+
+.brand div{
+    width: 33.33%;
+    float: left;
+}
+
+.brand div img{
+    width: 100%;
+}
+
+/* nav */
+nav{
+    padding-top: 5px;
+}
+nav a{
+    float: left;
+    width: 20%;
+    text-align: center;
+}
+
+nav a img{
+    width: 40px;
+    margin: 10px 0;
+}
+
+nav a span{
+    display: block;
+}
+
+/* news */
+
+.news img{
+    width: 100%;
+}
+
+.news{
+    margin-top: 20px;
+}
+.news a{
+    float: left;
+    box-sizing: border-box;
+}
+.news a:nth-child(1) {
+    width: 50%;
+}
+.news a:nth-child(2) {
+    width: 25%;
+}
+.news a:nth-child(3) {
+    width: 25%;
+}
+
+.news a::nth-child(n+2){
+    border-left: 1px soild #ccc;
 }
